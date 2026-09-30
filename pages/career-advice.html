@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PathBridge · Career Advice</title>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link href="../css/main.css" rel="stylesheet" />
+<script src="../js/i18n.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">PathBridge</a>
+      <nav class="nav-links">
+        <a href="../index.html#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="beneficios.html" data-i18n="nav.benefits">Beneficios</a>
+        <a href="jobs.html" data-i18n="nav.jobs">Jobs</a>
+        <a href="career-advice.html" class="active" data-i18n="nav.advice">Career Advice</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Language" data-lang-switcher>
+          <button type="button" class="lang-btn active" data-lang="es" aria-current="true">ES</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-current="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1 data-i18n="advice.hero.title">Recursos para llegar preparado a cada etapa.</h1>
+      <p data-i18n="advice.hero.subtitle">Guías, plantillas y casos reales para tu CV, tus entrevistas y tu primer empleo.</p>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="advice-categories">
+    <span class="category-chip active" data-i18n="advice.cat1">CV y portafolio</span>
+    <span class="category-chip" data-i18n="advice.cat2">Entrevistas</span>
+    <span class="category-chip" data-i18n="advice.cat3">Habilidades técnicas</span>
+    <span class="category-chip" data-i18n="advice.cat4">Primer empleo</span>
+  </section>
+
+  <!-- Articles -->
+  <section class="advice-articles">
+    <article class="article-card">
+      <span class="eyebrow" data-i18n="advice.article1.tag">CV y portafolio</span>
+      <h3 data-i18n="advice.article1.title">5 errores comunes en el CV de un recién egresado.</h3>
+      <p data-i18n="advice.article1.excerpt">Los reclutadores revisan un CV en menos de 10 segundos. Esto es lo que suele hacer que lo descarten.</p>
+      <span class="article-read" data-i18n="advice.article1.read">6 min de lectura</span>
+    </article>
+
+    <article class="article-card">
+      <span class="eyebrow" data-i18n="advice.article2.tag">Entrevistas</span>
+      <h3 data-i18n="advice.article2.title">Cómo responder '¿por qué deberíamos contratarte?' sin experiencia.</h3>
+      <p data-i18n="advice.article2.excerpt">Estructura tu respuesta con proyectos, prácticas y habilidades demostrables, aunque no tengas años de experiencia.</p>
+      <span class="article-read" data-i18n="advice.article2.read">5 min de lectura</span>
+    </article>
+
+    <article class="article-card">
+      <span class="eyebrow" data-i18n="advice.article3.tag">Primer empleo</span>
+      <h3 data-i18n="advice.article3.title">Guía para negociar tu primer sueldo.</h3>
+      <p data-i18n="advice.article3.excerpt">Sí, se puede negociar incluso en tu primer trabajo. Te contamos cómo prepararte para esa conversación.</p>
+      <span class="article-read" data-i18n="advice.article3.read">7 min de lectura</span>
+    </article>
+
+    <article class="article-card">
+      <span class="eyebrow" data-i18n="advice.article4.tag">Habilidades técnicas</span>
+      <h3 data-i18n="advice.article4.title">Qué habilidades técnicas piden más las empresas en 2024.</h3>
+      <p data-i18n="advice.article4.excerpt">Analizamos miles de vacantes en la plataforma para identificar las habilidades con mayor demanda.</p>
+      <span class="article-read" data-i18n="advice.article4.read">8 min de lectura</span>
+    </article>
+
+    <article class="article-card">
+      <span class="eyebrow" data-i18n="advice.article5.tag">CV y portafolio</span>
+      <h3 data-i18n="advice.article5.title">Cómo armar un portafolio si nunca has trabajado.</h3>
+      <p data-i18n="advice.article5.excerpt">Proyectos personales, freelance y trabajo universitario también cuentan. Te mostramos cómo presentarlos.</p>
+      <span class="article-read" data-i18n="advice.article5.read">5 min de lectura</span>
+    </article>
+
+    <article class="article-card">
+      <span class="eyebrow" data-i18n="advice.article6.tag">Entrevistas</span>
+      <h3 data-i18n="advice.article6.title">Preguntas frecuentes en entrevistas técnicas junior.</h3>
+      <p data-i18n="advice.article6.excerpt">Practica con el IA Coach usando este set de preguntas reales recopiladas de nuestras entrevistas simuladas.</p>
+      <span class="article-read" data-i18n="advice.article6.read">6 min de lectura</span>
+    </article>
+  </section>
+
+  <!-- Templates -->
+  <section class="templates-section">
+    <div class="templates-inner">
+      <div class="templates-text">
+        <h2 data-i18n="advice.templates.title">Plantillas revisadas por reclutadores</h2>
+        <p data-i18n="advice.templates.body">Dentro de la plataforma encuentras plantillas para tu CV, tu carta de presentación y tu checklist de entrevista.</p>
+      </div>
+      <div class="templates-list">
+        <div class="template-item">
+          <span class="material-symbols-outlined">description</span>
+          <span data-i18n="advice.templates.item1">Plantilla de CV</span>
+        </div>
+        <div class="template-item">
+          <span class="material-symbols-outlined">mail</span>
+          <span data-i18n="advice.templates.item2">Carta de presentación</span>
+        </div>
+        <div class="template-item">
+          <span class="material-symbols-outlined">checklist</span>
+          <span data-i18n="advice.templates.item3">Checklist de entrevista</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="../index.html" class="footer-logo">PathBridge</a>
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.about">About Us</a>
+        <a href="#" data-i18n="footer.contact">Contact</a>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        <a href="#" data-i18n="footer.help">Help Center</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">© 2024 PathBridge. Bridging the gap from campus to career.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

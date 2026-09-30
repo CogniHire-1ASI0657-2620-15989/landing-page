@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PathBridge · Jobs</title>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link href="../css/main.css" rel="stylesheet" />
+<script src="../js/i18n.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">PathBridge</a>
+      <nav class="nav-links">
+        <a href="../index.html#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="beneficios.html" data-i18n="nav.benefits">Beneficios</a>
+        <a href="jobs.html" class="active" data-i18n="nav.jobs">Jobs</a>
+        <a href="career-advice.html" data-i18n="nav.advice">Career Advice</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Language" data-lang-switcher>
+          <button type="button" class="lang-btn active" data-lang="es" aria-current="true">ES</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-current="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1 data-i18n="jobs.hero.title">Encuentra vacantes que hacen match con tu perfil.</h1>
+      <p data-i18n="jobs.hero.subtitle">Cada vacante muestra tu porcentaje de compatibilidad real, calculado con el mismo análisis de brecha que usamos en tu diagnóstico.</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="jobs-filters">
+    <div class="filters-inner">
+      <div class="search-field filter-field">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" placeholder="Puesto o palabra clave" data-i18n-placeholder="jobs.filters.keyword" />
+      </div>
+      <div class="search-field filter-field">
+        <span class="material-symbols-outlined">location_on</span>
+        <input type="text" placeholder="Ciudad o remoto" data-i18n-placeholder="jobs.filters.location" />
+      </div>
+      <div class="search-field filter-field filter-select">
+        <span class="material-symbols-outlined">tune</span>
+        <select data-i18n-placeholder="jobs.filters.level" aria-label="Nivel">
+          <option data-i18n="jobs.filters.level.all">Todos los niveles</option>
+          <option data-i18n="jobs.filters.level.intern">Practicante</option>
+          <option data-i18n="jobs.filters.level.junior">Junior</option>
+          <option data-i18n="jobs.filters.level.trainee">Trainee</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" data-i18n="jobs.filters.btn">Buscar</button>
+    </div>
+  </section>
+
+  <!-- Job list -->
+  <section class="jobs-list">
+    <p class="jobs-count" data-i18n="jobs.results.count">48 vacantes encontradas</p>
+
+    <div class="job-card">
+      <div class="job-card-main">
+        <div class="job-card-top">
+          <h3 data-i18n="jobs.job1.title">Analista de Datos Jr.</h3>
+          <span class="match-pill match-pill-lg">91% <span data-i18n="jobs.card.match">match</span></span>
+        </div>
+        <p class="job-meta">
+          <span data-i18n="jobs.job1.company">Nimbus Analytics</span> ·
+          <span data-i18n="jobs.job1.location">Lima, remoto</span> ·
+          <span data-i18n="jobs.job1.type">Tiempo completo</span>
+        </p>
+        <div class="job-skills">
+          <span class="skill-chip" data-i18n="jobs.job1.skill1">SQL</span>
+          <span class="skill-chip" data-i18n="jobs.job1.skill2">Power BI</span>
+        </div>
+      </div>
+      <div class="job-card-actions">
+        <button class="icon-btn" aria-label="Guardar" title="Guardar"><span class="material-symbols-outlined">bookmark_border</span></button>
+        <a href="#" class="btn btn-primary btn-sm" data-i18n="jobs.card.view">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-main">
+        <div class="job-card-top">
+          <h3 data-i18n="jobs.job2.title">Desarrollador Frontend</h3>
+          <span class="match-pill match-pill-lg">85% <span data-i18n="jobs.card.match">match</span></span>
+        </div>
+        <p class="job-meta">
+          <span data-i18n="jobs.job2.company">Bright Labs</span> ·
+          <span data-i18n="jobs.job2.location">Ciudad de México, remoto</span> ·
+          <span data-i18n="jobs.job2.type">Tiempo completo</span>
+        </p>
+        <div class="job-skills">
+          <span class="skill-chip" data-i18n="jobs.job2.skill1">React</span>
+          <span class="skill-chip" data-i18n="jobs.job2.skill2">TypeScript</span>
+        </div>
+      </div>
+      <div class="job-card-actions">
+        <button class="icon-btn" aria-label="Guardar" title="Guardar"><span class="material-symbols-outlined">bookmark_border</span></button>
+        <a href="#" class="btn btn-primary btn-sm" data-i18n="jobs.card.view">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-main">
+        <div class="job-card-top">
+          <h3 data-i18n="jobs.job3.title">Asistente de Marketing Digital</h3>
+          <span class="match-pill match-pill-lg">76% <span data-i18n="jobs.card.match">match</span></span>
+        </div>
+        <p class="job-meta">
+          <span data-i18n="jobs.job3.company">Loop Studio</span> ·
+          <span data-i18n="jobs.job3.location">Bogotá, híbrido</span> ·
+          <span data-i18n="jobs.job3.type">Prácticas</span>
+        </p>
+        <div class="job-skills">
+          <span class="skill-chip" data-i18n="jobs.job3.skill1">SEO</span>
+          <span class="skill-chip" data-i18n="jobs.job3.skill2">Meta Ads</span>
+        </div>
+      </div>
+      <div class="job-card-actions">
+        <button class="icon-btn" aria-label="Guardar" title="Guardar"><span class="material-symbols-outlined">bookmark_border</span></button>
+        <a href="#" class="btn btn-primary btn-sm" data-i18n="jobs.card.view">Ver detalle</a>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-card-main">
+        <div class="job-card-top">
+          <h3 data-i18n="jobs.job4.title">Ingeniero de Soporte Jr.</h3>
+          <span class="match-pill match-pill-lg">69% <span data-i18n="jobs.card.match">match</span></span>
+        </div>
+        <p class="job-meta">
+          <span data-i18n="jobs.job4.company">Cortex Systems</span> ·
+          <span data-i18n="jobs.job4.location">Santiago, remoto</span> ·
+          <span data-i18n="jobs.job4.type">Tiempo completo</span>
+        </p>
+        <div class="job-skills">
+          <span class="skill-chip" data-i18n="jobs.job4.skill1">Linux</span>
+          <span class="skill-chip" data-i18n="jobs.job4.skill2">Networking</span>
+        </div>
+      </div>
+      <div class="job-card-actions">
+        <button class="icon-btn" aria-label="Guardar" title="Guardar"><span class="material-symbols-outlined">bookmark_border</span></button>
+        <a href="#" class="btn btn-primary btn-sm" data-i18n="jobs.card.view">Ver detalle</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA a la aplicación -->
+  <section class="cta">
+    <h2 data-i18n="jobs.cta.title">¿No encuentras el puesto ideal?</h2>
+    <p data-i18n="jobs.cta.body">Dentro de la aplicación encuentras el listado completo de vacantes, ordenadas según tu porcentaje de compatibilidad.</p>
+    <a href="https://app.pathbridge.com" target="_blank" rel="noopener" class="btn btn-white">
+      <span class="material-symbols-outlined">arrow_outward</span>
+      <span data-i18n="jobs.cta.btn">Ir a la aplicación</span>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="../index.html" class="footer-logo">PathBridge</a>
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.about">About Us</a>
+        <a href="#" data-i18n="footer.contact">Contact</a>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+        <a href="#" data-i18n="footer.help">Help Center</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">© 2024 PathBridge. Bridging the gap from campus to career.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

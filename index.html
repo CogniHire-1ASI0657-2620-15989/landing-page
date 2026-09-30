@@ -1,287 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PathBridge</title>
-<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined" rel="stylesheet" />
-<link href="./css/main.css" rel="stylesheet" />
-<script src="./js/i18n.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PathBridge</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <script src="./js/i18n.js" defer></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
+<!-- Header -->
+<header class="header">
     <div class="header-inner">
-      <div class="logo">PathBridge</div>
-      <nav class="nav-links">
-        <a href="#inicio" data-i18n="nav.home">Inicio</a>
-        <a href="#beneficios" data-i18n="nav.benefits">Beneficios</a>
-        <a href="#" data-i18n="nav.jobs">Jobs</a>
-        <a href="#" data-i18n="nav.advice">Career Advice</a>
-        <a href="#" data-i18n="nav.companies">Companies</a>
-      </nav>
-      <div class="header-actions">
-        <div class="lang-switcher" role="group" aria-label="Language" data-lang-switcher>
-          <button type="button" class="lang-btn active" data-lang="es" aria-current="true">ES</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-current="false">EN</button>
+        <div class="logo">PathBridge</div>
+        <nav class="nav-links">
+            <a href="#inicio" data-i18n="nav.home">Inicio</a>
+            <a href="pages/beneficios.html" data-i18n="nav.benefits">Beneficios</a>
+            <a href="pages/jobs.html" data-i18n="nav.jobs">Jobs</a>
+            <a href="pages/career-advice.html" data-i18n="nav.advice">Career Advice</a>
+        </nav>
+        <div class="header-actions">
+            <div class="lang-switcher" role="group" aria-label="Language" data-lang-switcher>
+                <button type="button" class="lang-btn active" data-lang="es" aria-current="true">ES</button>
+                <button type="button" class="lang-btn" data-lang="en" aria-current="false">EN</button>
+            </div>
         </div>
-        <a href="#" class="signin" data-i18n="nav.signin">Sign In</a>
-        <a href="#" class="btn btn-primary" data-i18n="nav.join">Join Now</a>
-      </div>
     </div>
-  </header>
+</header>
 
-  <!-- Hero -->
-  <section class="hero" id="inicio">
+<!-- Hero / Inicio -->
+<section class="hero" id="inicio">
     <div class="hero-inner">
-      <div class="hero-text">
-        <h1 data-i18n="hero.title">Analizamos tu perfil para conseguir tu trabajo ideal.</h1>
-        <p data-i18n="hero.subtitle">Descubre qué habilidades te faltan para el puesto de tus sueños y prepárate con un plan personalizado paso a paso.</p>
+        <div class="hero-text">
+            <h1 data-i18n="hero.title">Analizamos tu perfil para conseguir tu trabajo ideal.</h1>
+            <p data-i18n="hero.subtitle">Descubre qué habilidades te faltan para el puesto de tus sueños y prepárate con un plan personalizado paso a paso.</p>
 
-        <div class="search-bar">
-          <div class="search-field">
-            <span class="material-symbols-outlined">search</span>
-            <input type="text" placeholder="Puesto, empresa o palabra clave" data-i18n-placeholder="hero.search.keyword" />
-          </div>
-          <div class="search-divider"></div>
-          <div class="search-field">
-            <span class="material-symbols-outlined">location_on</span>
-            <input type="text" placeholder="Ciudad o remoto" data-i18n-placeholder="hero.search.location" />
-          </div>
-          <button class="btn btn-primary search-btn" data-i18n="hero.search.btn">Buscar</button>
+            <a href="https://app.pathbridge.com" target="_blank" rel="noopener" class="btn btn-primary hero-cta-btn">
+                <span data-i18n="appcta.btn">Ir a la aplicación</span>
+                <span class="material-symbols-outlined">arrow_outward</span>
+            </a>
         </div>
-      </div>
 
-      <div class="hero-image">
-        <img src="./images/hero.jpg" alt="Profesional sonriendo en oficina" />
-      </div>
+        <div class="hero-image">
+            <img src="./images/hero.jpg" alt="Profesional sonriendo en oficina" />
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Trusted companies -->
-  <section class="trusted">
-    <p class="trusted-label" data-i18n="trusted.label">EMPRESAS QUE CONFÍAN EN NUESTRO TALENTO</p>
-    <div class="trusted-logos">
-      <div class="logo-placeholder"></div>
-      <div class="logo-placeholder"></div>
-      <div class="logo-placeholder"></div>
-      <div class="logo-placeholder"></div>
-      <div class="logo-placeholder"></div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section class="how-it-works">
+<!-- How it works -->
+<section class="how-it-works">
     <h2 data-i18n="how.title">¿Cómo funciona?</h2>
     <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-icon icon-blue"><span class="material-symbols-outlined">query_stats</span></div>
-        <h3 data-i18n="how.step1.title">Análisis de Brecha</h3>
-        <p data-i18n="how.step1.body">Comparamos tu perfil con los requisitos exactos del puesto que deseas.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-icon icon-blue"><span class="material-symbols-outlined">menu_book</span></div>
-        <h3 data-i18n="how.step2.title">Plan de Estudio Personalizado</h3>
-        <p data-i18n="how.step2.body">Recomendaciones de cursos en Platzi o Udemy basados en lo que te falta.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-icon icon-gray"><span class="material-symbols-outlined">psychology</span></div>
-        <h3 data-i18n="how.step3.title">Entrenamiento con IA Coach</h3>
-        <p data-i18n="how.step3.body">Practica entrevistas y simulaciones una vez que termines tus cursos.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-icon icon-blue"><span class="material-symbols-outlined">verified</span></div>
-        <h3 data-i18n="how.step4.title">¡Listo para el Empleo!</h3>
-        <p data-i18n="how.step4.body">Sigue tu progreso de aprendizaje y postulaciones hasta que seas contratado.</p>
-      </div>
+        <div class="step-card">
+            <div class="step-icon icon-blue"><span class="material-symbols-outlined">query_stats</span></div>
+            <h3 data-i18n="how.step1.title">Análisis de Brecha</h3>
+            <p data-i18n="how.step1.body">Comparamos tu perfil con los requisitos exactos del puesto que deseas.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-icon icon-blue"><span class="material-symbols-outlined">menu_book</span></div>
+            <h3 data-i18n="how.step2.title">Plan de Estudio Personalizado</h3>
+            <p data-i18n="how.step2.body">Recomendaciones de cursos en Platzi o Udemy basados en lo que te falta.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-icon icon-gray"><span class="material-symbols-outlined">psychology</span></div>
+            <h3 data-i18n="how.step3.title">Entrenamiento con IA Coach</h3>
+            <p data-i18n="how.step3.body">Practica entrevistas y simulaciones una vez que termines tus cursos.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-icon icon-blue"><span class="material-symbols-outlined">verified</span></div>
+            <h3 data-i18n="how.step4.title">¡Listo para el Empleo!</h3>
+            <p data-i18n="how.step4.body">Sigue tu progreso de aprendizaje y postulaciones hasta que seas contratado.</p>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Benefits -->
-  <section class="benefits" id="beneficios">
+<!-- Beneficios -->
+<section class="benefits" id="beneficios">
     <div class="benefits-lead">
-      <span class="eyebrow" data-i18n="benefits.eyebrow">La plataforma</span>
-      <h2 data-i18n="benefits.title">Una experiencia pensada para cada etapa de tu camino profesional.</h2>
-      <p data-i18n="benefits.body">Ya sea que busques tu primer empleo o quieras cerrar la brecha de habilidades que piden las empresas, PathBridge conecta preparación real con oportunidades reales.</p>
+        <span class="eyebrow" data-i18n="benefits.eyebrow">La plataforma</span>
+        <h2 data-i18n="benefits.title">Una experiencia pensada para cada etapa de tu camino profesional.</h2>
+        <p data-i18n="benefits.body">Ya sea que busques tu primer empleo o quieras cerrar la brecha de habilidades que piden las empresas, PathBridge conecta preparación real con oportunidades reales.</p>
     </div>
 
-    <!-- Block 1: Candidates -->
+    <!-- Block 1: Candidatos -->
     <div class="value-block">
-      <div class="value-text">
-        <span class="eyebrow" data-i18n="benefits.candidates.eyebrow">Para candidatos</span>
-        <h3 data-i18n="benefits.candidates.title">Prepárate con un plan hecho a tu medida.</h3>
-        <p data-i18n="benefits.candidates.body">Identificamos exactamente qué te falta para el puesto que quieres y te damos un camino claro para lograrlo.</p>
-        <ul class="feature-list">
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.candidates.feat1.lead">Análisis de brecha personalizado</strong><span data-i18n="benefits.candidates.feat1.rest"> — comparamos tu perfil con los requisitos reales del puesto.</span></span></li>
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.candidates.feat2.lead">Rutas de aprendizaje curadas</strong><span data-i18n="benefits.candidates.feat2.rest"> con cursos de Platzi y Udemy elegidos según lo que necesitas.</span></span></li>
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.candidates.feat3.lead">Práctica con IA Coach</strong><span data-i18n="benefits.candidates.feat3.rest"> en simulacros de entrevista antes de postular.</span></span></li>
-        </ul>
-        <a href="#" class="value-link"><span data-i18n="benefits.candidates.link">Ver cómo funciona</span><span class="material-symbols-outlined">arrow_forward</span></a>
-      </div>
-      <div class="value-visual">
-        <div class="visual-card">
-          <p class="visual-title" data-i18n="benefits.candidates.visual.title">Compatibilidad con el puesto</p>
-          <div class="skill-row">
-            <span data-i18n="benefits.candidates.visual.skill1">SQL</span>
-            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-          </div>
-          <div class="skill-row">
-            <span data-i18n="benefits.candidates.visual.skill2">Python</span>
-            <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
-          </div>
-          <div class="skill-row">
-            <span data-i18n="benefits.candidates.visual.skill3">Comunicación</span>
-            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-          </div>
+        <div class="value-text">
+            <span class="eyebrow" data-i18n="benefits.candidates.eyebrow">Para candidatos</span>
+            <h3 data-i18n="benefits.candidates.title">Prepárate con un plan hecho a tu medida.</h3>
+            <p data-i18n="benefits.candidates.body">Identificamos exactamente qué te falta para el puesto que quieres y te damos un camino claro para lograrlo.</p>
+            <ul class="feature-list">
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.candidates.feat1.lead">Análisis de brecha personalizado</strong><span data-i18n="benefits.candidates.feat1.rest"> — comparamos tu perfil con los requisitos reales del puesto.</span></span></li>
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.candidates.feat2.lead">Rutas de aprendizaje curadas</strong><span data-i18n="benefits.candidates.feat2.rest"> con cursos de Platzi y Udemy elegidos según lo que necesitas.</span></span></li>
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.candidates.feat3.lead">Práctica con IA Coach</strong><span data-i18n="benefits.candidates.feat3.rest"> en simulacros de entrevista antes de postular.</span></span></li>
+            </ul>
+            <a href="#" class="value-link"><span data-i18n="benefits.candidates.link">Ver cómo funciona</span><span class="material-symbols-outlined">arrow_forward</span></a>
         </div>
-      </div>
+        <div class="value-visual">
+            <div class="visual-card">
+                <p class="visual-title" data-i18n="benefits.candidates.visual.title">Compatibilidad con el puesto</p>
+                <div class="skill-row">
+                    <span data-i18n="benefits.candidates.visual.skill1">SQL</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-row">
+                    <span data-i18n="benefits.candidates.visual.skill2">Python</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-row">
+                    <span data-i18n="benefits.candidates.visual.skill3">Comunicación</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Block 2: Companies -->
+    <!-- Block 2: Empresas (flip) -->
     <div class="value-block flip">
-      <div class="value-text">
-        <span class="eyebrow" data-i18n="benefits.companies.eyebrow">Para empresas</span>
-        <h3 data-i18n="benefits.companies.title">Accede a talento junior que ya llegó preparado.</h3>
-        <p data-i18n="benefits.companies.body">Reduce el tiempo de selección con candidatos que ya cerraron su brecha de habilidades antes de postular.</p>
-        <ul class="feature-list">
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.companies.feat1.lead">Perfiles verificados por habilidades</strong><span data-i18n="benefits.companies.feat1.rest">, no solo currículums, sino evidencia real de aprendizaje.</span></span></li>
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.companies.feat2.lead">Filtrado inteligente</strong><span data-i18n="benefits.companies.feat2.rest"> para encontrar candidatos listos para el puesto exacto.</span></span></li>
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.companies.feat3.lead">Menor rotación temprana</strong><span data-i18n="benefits.companies.feat3.rest">: el candidato ya sabe lo que implica el rol.</span></span></li>
-        </ul>
-        <a href="#" class="value-link"><span data-i18n="benefits.companies.link">Conoce el plan para empresas</span><span class="material-symbols-outlined">arrow_forward</span></a>
-      </div>
-      <div class="value-visual">
-        <div class="visual-card">
-          <p class="visual-title" data-i18n="benefits.companies.visual.title">Candidatos listos</p>
-          <div class="candidate-row">
-            <span data-i18n="benefits.companies.visual.candidate1">Ana S. · Datos</span>
-            <span class="match-pill">92% <span data-i18n="benefits.companies.visual.match">match</span></span>
-          </div>
-          <div class="candidate-row">
-            <span data-i18n="benefits.companies.visual.candidate2">Carlos M. · Frontend</span>
-            <span class="match-pill">88% <span data-i18n="benefits.companies.visual.match">match</span></span>
-          </div>
+        <div class="value-text">
+            <span class="eyebrow" data-i18n="benefits.companies.eyebrow">Para empresas</span>
+            <h3 data-i18n="benefits.companies.title">Accede a talento junior que ya llegó preparado.</h3>
+            <p data-i18n="benefits.companies.body">Reduce el tiempo de selección con candidatos que ya cerraron su brecha de habilidades antes de postular.</p>
+            <ul class="feature-list">
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.companies.feat1.lead">Perfiles verificados por habilidades</strong><span data-i18n="benefits.companies.feat1.rest">, no solo currículums, sino evidencia real de aprendizaje.</span></span></li>
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.companies.feat2.lead">Filtrado inteligente</strong><span data-i18n="benefits.companies.feat2.rest"> para encontrar candidatos listos para el puesto exacto.</span></span></li>
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.companies.feat3.lead">Menor rotación temprana</strong><span data-i18n="benefits.companies.feat3.rest">: el candidato ya sabe lo que implica el rol.</span></span></li>
+            </ul>
         </div>
-      </div>
+        <div class="value-visual">
+            <div class="visual-card">
+                <p class="visual-title" data-i18n="benefits.companies.visual.title">Candidatos listos</p>
+                <div class="candidate-row">
+                    <span data-i18n="benefits.companies.visual.candidate1">Ana S. · Datos</span>
+                    <span class="match-pill">92% <span data-i18n="benefits.companies.visual.match">match</span></span>
+                </div>
+                <div class="candidate-row">
+                    <span data-i18n="benefits.companies.visual.candidate2">Carlos M. · Frontend</span>
+                    <span class="match-pill">88% <span data-i18n="benefits.companies.visual.match">match</span></span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Block 3: IA -->
     <div class="value-block">
-      <div class="value-text">
-        <span class="eyebrow" data-i18n="benefits.ai.eyebrow">Asistente IA</span>
-        <h3 data-i18n="benefits.ai.title">Un coach de entrevistas disponible cuando lo necesites.</h3>
-        <p data-i18n="benefits.ai.body">Practica simulacros reales, recibe feedback inmediato y llega a tu entrevista con confianza.</p>
-        <ul class="feature-list">
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.ai.feat1.lead">Simulacros ilimitados</strong><span data-i18n="benefits.ai.feat1.rest"> — practica tantas veces como quieras, sin costo extra.</span></span></li>
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.ai.feat2.lead">Feedback instantáneo</strong><span data-i18n="benefits.ai.feat2.rest"> sobre tono, claridad y estructura de tus respuestas.</span></span></li>
-          <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.ai.feat3.lead">Disponible 24/7</strong><span data-i18n="benefits.ai.feat3.rest">: sin agendar turno ni esperar.</span></span></li>
-        </ul>
-        <a href="#" class="value-link"><span data-i18n="benefits.ai.link">Probar el coach de entrevistas</span><span class="material-symbols-outlined">arrow_forward</span></a>
-      </div>
-      <div class="value-visual">
-        <div class="visual-card chat-card">
-          <div class="chat-card-header">
-            <span class="material-symbols-outlined">smart_toy</span>
-            <div>
-              <p class="visual-title" data-i18n="benefits.ai.visual.name">IA Coach · PathBridge</p>
-              <span class="status-dot" data-i18n="benefits.ai.visual.status">En línea</span>
-            </div>
-          </div>
-          <div class="chat-bubble bot" data-i18n="benefits.ai.visual.msg1">¿Por qué quieres trabajar en esta empresa?</div>
-          <div class="chat-bubble user">···</div>
-          <div class="chat-bubble bot" data-i18n="benefits.ai.visual.msg2">Buena respuesta. Intenta ser más específico con un ejemplo.</div>
+        <div class="value-text">
+            <span class="eyebrow" data-i18n="benefits.ai.eyebrow">Asistente IA</span>
+            <h3 data-i18n="benefits.ai.title">Un coach de entrevistas disponible cuando lo necesites.</h3>
+            <p data-i18n="benefits.ai.body">Practica simulacros reales, recibe feedback inmediato y llega a tu entrevista con confianza.</p>
+            <ul class="feature-list">
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.ai.feat1.lead">Simulacros ilimitados</strong><span data-i18n="benefits.ai.feat1.rest"> — practica tantas veces como quieras, sin costo extra.</span></span></li>
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.ai.feat2.lead">Feedback instantáneo</strong><span data-i18n="benefits.ai.feat2.rest"> sobre tono, claridad y estructura de tus respuestas.</span></span></li>
+                <li><span class="material-symbols-outlined feature-check">check_circle</span><span><strong data-i18n="benefits.ai.feat3.lead">Disponible 24/7</strong><span data-i18n="benefits.ai.feat3.rest">: sin agendar turno ni esperar.</span></span></li>
+            </ul>
+            <a href="#" class="value-link"><span data-i18n="benefits.ai.link">Probar el coach de entrevistas</span><span class="material-symbols-outlined">arrow_forward</span></a>
         </div>
-      </div>
+        <div class="value-visual">
+            <div class="visual-card chat-card">
+                <div class="chat-card-header">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <div>
+                        <p class="visual-title" data-i18n="benefits.ai.visual.name">IA Coach · PathBridge</p>
+                        <span class="status-dot" data-i18n="benefits.ai.visual.status">En línea</span>
+                    </div>
+                </div>
+                <div class="chat-bubble bot" data-i18n="benefits.ai.visual.msg1">¿Por qué quieres trabajar en esta empresa?</div>
+                <div class="chat-bubble user">···</div>
+                <div class="chat-bubble bot" data-i18n="benefits.ai.visual.msg2">Buena respuesta. Intenta ser más específico con un ejemplo.</div>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- Boost your career -->
-  <section class="boost-career">
+    <div class="benefits-footer">
+        <a href="pages/beneficios.html" class="value-link"><span data-i18n="benefits.seeall">Ver todos los beneficios</span><span class="material-symbols-outlined">arrow_forward</span></a>
+    </div>
+</section>
+
+<!-- Boost your career -->
+<section class="boost-career">
     <h2 data-i18n="boost.title">Impulsa tu carrera</h2>
     <div class="boost-grid">
-      <div class="boost-card">
-        <div class="boost-icon icon-blue"><span class="material-symbols-outlined">show_chart</span></div>
-        <h3 data-i18n="boost.card1.title">Análisis de Puesto vs Perfil</h3>
-        <p data-i18n="boost.card1.body">Identificamos la brecha exacta entre tus habilidades actuales y lo que exige el mercado para tu puesto ideal.</p>
-      </div>
-      <div class="boost-card">
-        <div class="boost-icon icon-blue"><span class="material-symbols-outlined">school</span></div>
-        <h3 data-i18n="boost.card2.title">Cursos de Platzi y Udemy Integrados</h3>
-        <p data-i18n="boost.card2.body">Accede a recomendaciones de cursos seleccionados para cubrir específicamente tus áreas de oportunidad.</p>
-      </div>
-      <div class="boost-card">
-        <div class="boost-icon icon-gray"><span class="material-symbols-outlined">support_agent</span></div>
-        <h3 data-i18n="boost.card3.title">Coach de Entrevistas con IA</h3>
-        <p data-i18n="boost.card3.body">Practica con nuestro agente de inteligencia artificial para superar cualquier filtro en tus procesos de selección.</p>
-      </div>
+        <div class="boost-card">
+            <div class="boost-icon icon-blue"><span class="material-symbols-outlined">show_chart</span></div>
+            <h3 data-i18n="boost.card1.title">Análisis de Puesto vs Perfil</h3>
+            <p data-i18n="boost.card1.body">Identificamos la brecha exacta entre tus habilidades actuales y lo que exige el mercado para tu puesto ideal.</p>
+        </div>
+        <div class="boost-card">
+            <div class="boost-icon icon-blue"><span class="material-symbols-outlined">school</span></div>
+            <h3 data-i18n="boost.card2.title">Cursos de Platzi y Udemy Integrados</h3>
+            <p data-i18n="boost.card2.body">Accede a recomendaciones de cursos seleccionados para cubrir específicamente tus áreas de oportunidad.</p>
+        </div>
+        <div class="boost-card">
+            <div class="boost-icon icon-gray"><span class="material-symbols-outlined">support_agent</span></div>
+            <h3 data-i18n="boost.card3.title">Coach de Entrevistas con IA</h3>
+            <p data-i18n="boost.card3.body">Practica con nuestro agente de inteligencia artificial para superar cualquier filtro en tus procesos de selección.</p>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- CTA -->
-  <section class="cta">
+<!-- CTA -->
+<section class="cta">
     <h2 data-i18n="cta.title">Comienza tu diagnóstico de carrera</h2>
     <p data-i18n="cta.body">Únete a miles de profesionales que ya están cerrando su brecha de habilidades, preparándose de manera efectiva y consiguiendo el trabajo de sus sueños.</p>
     <button class="btn btn-white">
-      <span class="material-symbols-outlined">assignment</span>
-      <span data-i18n="cta.btn">Iniciar diagnóstico</span>
+        <span class="material-symbols-outlined">assignment</span>
+        <span data-i18n="cta.btn">Iniciar diagnóstico</span>
     </button>
-  </section>
+</section>
 
-  <!-- Success stories -->
-  <section class="success-stories">
+<!-- Success stories -->
+<section class="success-stories">
     <h2 data-i18n="stories.title">Casos de Éxito</h2>
     <div class="stories-grid">
-      <div class="story-card">
-        <div class="story-header">
-          <img src="./images/avatar1.jpg" alt="Ana S." class="avatar" />
-          <div>
-            <h4>Ana S.</h4>
-            <span data-i18n="stories.role1">Analista de Datos Jr.</span>
-          </div>
+        <div class="story-card">
+            <div class="story-header">
+                <img src="./images/avatar1.jpg" alt="Ana S." class="avatar" />
+                <div>
+                    <h4>Ana S.</h4>
+                    <span data-i18n="stories.role1">Analista de Datos Jr.</span>
+                </div>
+            </div>
+            <p data-i18n="stories.quote1">"Conseguí mi primera práctica en menos de dos semanas. La plataforma es muy intuitiva y las empresas responden rápido."</p>
         </div>
-        <p data-i18n="stories.quote1">"Conseguí mi primera práctica en menos de dos semanas. La plataforma es muy intuitiva y las empresas responden rápido."</p>
-      </div>
-      <div class="story-card">
-        <div class="story-header">
-          <img src="./images/avatar2.jpg" alt="Carlos M." class="avatar" />
-          <div>
-            <h4>Carlos M.</h4>
-            <span data-i18n="stories.role2">Desarrollador Frontend</span>
-          </div>
+        <div class="story-card">
+            <div class="story-header">
+                <img src="./images/avatar2.jpg" alt="Carlos M." class="avatar" />
+                <div>
+                    <h4>Carlos M.</h4>
+                    <span data-i18n="stories.role2">Desarrollador Frontend</span>
+                </div>
+            </div>
+            <p data-i18n="stories.quote2">"La herramienta de revisión de CV me ayudó a destacar mis proyectos universitarios de la manera correcta. Totalmente recomendada."</p>
         </div>
-        <p data-i18n="stories.quote2">"La herramienta de revisión de CV me ayudó a destacar mis proyectos universitarios de la manera correcta. Totalmente recomendada."</p>
-      </div>
-      <div class="story-card">
-        <div class="story-header">
-          <img src="./images/avatar3.jpg" alt="Elena G." class="avatar" />
-          <div>
-            <h4>Elena G.</h4>
-            <span data-i18n="stories.role3">Asistente de Marketing</span>
-          </div>
+        <div class="story-card">
+            <div class="story-header">
+                <img src="./images/avatar3.jpg" alt="Elena G." class="avatar" />
+                <div>
+                    <h4>Elena G.</h4>
+                    <span data-i18n="stories.role3">Asistente de Marketing</span>
+                </div>
+            </div>
+            <p data-i18n="stories.quote3">"Encontrar ofertas que realmente fueran para 'sin experiencia' fue un alivio. PathBridge entiende lo que los recién graduados necesitamos."</p>
         </div>
-        <p data-i18n="stories.quote3">"Encontrar ofertas que realmente fueran para 'sin experiencia' fue un alivio. PathBridge entiende lo que los recién graduados necesitamos."</p>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
+<!-- Footer -->
+<footer class="footer">
     <div class="footer-inner">
-      <div class="footer-logo">PathBridge</div>
-      <div class="footer-links">
-        <a href="#" data-i18n="footer.about">About Us</a>
-        <a href="#" data-i18n="footer.contact">Contact</a>
-        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-        <a href="#" data-i18n="footer.terms">Terms of Service</a>
-        <a href="#" data-i18n="footer.help">Help Center</a>
-      </div>
+        <div class="footer-logo">PathBridge</div>
+        <div class="footer-links">
+            <a href="#" data-i18n="footer.about">About Us</a>
+            <a href="#" data-i18n="footer.contact">Contact</a>
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer.terms">Terms of Service</a>
+            <a href="#" data-i18n="footer.help">Help Center</a>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p data-i18n="footer.copy">© 2026 PathBridge. Bridging the gap from campus to career.</p>
+        <p data-i18n="footer.copy">© 2024 PathBridge. Bridging the gap from campus to career.</p>
     </div>
-  </footer>
+</footer>
 
 </body>
 </html>
