@@ -7,7 +7,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #171c20;
-    background: #ffffff;
+    background: #e9e4e4;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .btn-primary:hover {
-    background: #1a6fc0;
+    background: #1ac0c0;
 }
 
 .btn-white {
